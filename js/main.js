@@ -1,38 +1,32 @@
 function DisplayHint(code){
+    
+    
+    
  if (code === 303.5){
     //Earth and Moon
-    setTimeout(function(){ document.getElementById("moonspd").style.left = "0%"; }, 1000);
-    setTimeout(function(){ document.getElementById("moonspd").style.left = "-100%"; }, 6000);    
-    setTimeout(function(){ document.getElementById("moontime").style.left = "0%"; }, 8000);
-    setTimeout(function(){ document.getElementById("moontime").style.left = "-100%"; }, 13000);
+    setTimeout(function(){ document.getElementById("moon1").style.left = "0%"; }, 4000);
+    setTimeout(function(){ document.getElementById("moon1").style.left = "-100%"; }, 9000);    
+    setTimeout(function(){ document.getElementById("moon2").style.left = "0%"; }, 10000);
+    setTimeout(function(){ document.getElementById("moon2").style.left = "-100%"; }, 15000);
  }
+ 
+ 
+ 
+ 
  else if (code === 304){
     //Earth and Mars
-    setTimeout(function(){ document.getElementById("marsspd").style.left = "0%"; }, 1000);
-    setTimeout(function(){ document.getElementById("marsspd").style.left = "-100%"; }, 6000);    
-    setTimeout(function(){ document.getElementById("marstime").style.left = "0%"; }, 8000);
-    setTimeout(function(){ document.getElementById("marstime").style.left = "-100%"; }, 13000);
+    setTimeout(function(){ document.getElementById("mars1").style.left = "0%"; }, 1000);
+    setTimeout(function(){ document.getElementById("mars1").style.left = "-100%"; }, 8000);    
+    setTimeout(function(){ document.getElementById("mars2").style.left = "0%"; }, 10000);
+    setTimeout(function(){ document.getElementById("mars2").style.left = "-100%"; }, 17000);
+    setTimeout(function(){ document.getElementById("mars3").style.left = "0%"; }, 19000);
+    setTimeout(function(){ document.getElementById("mars3").style.left = "-100%"; }, 26000);
+    setTimeout(function(){ document.getElementById("mars4").style.left = "0%"; }, 28000);
+    setTimeout(function(){ document.getElementById("mars4").style.left = "-100%"; }, 35000);
  }
+ 
+ 
+ 
+ 
+ 
 }
-
-
-
-function doScrolling(elementY, duration, route) { 
-  var startingY = window.pageYOffset;
-  var diff = elementY - startingY;
-  var start;
-
-  window.requestAnimationFrame(function step(timestamp) {
-    if (!start) start = timestamp;
-    var time = timestamp - start;
-    var percent = Math.min(time / duration, 1);
-
-    window.scrollTo(0, startingY + diff * percent);
-
-    if (time < duration) {
-      window.requestAnimationFrame(step);
-    }
-  });
-  DisplayHint(route);
-}
-
