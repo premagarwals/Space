@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Space</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="author" content="Prem Agarwal"> 
+  <meta name="description" content="Feel the space"> 
+  <meta name="keywords" content="programming hero, web playground"> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+  <script src="js/smoothScroll.js">  </script> 
+  <!--custom css--> 
+  <link rel="stylesheet" href="css/style.css"> 
+ </head> 
+ <body> 
+  <section class="space"> 
+   <div class="ufo"> 
+    <img id="ufo" src="images/ufo.jpg">  
+   </div> 
+   <div id="earth-cont" class="cont"> 
+    <img id="earth" src="images/earth.jpg">  
+    <h3> Earth </h3> 
+    <p> Diameter: 12742 KM </p> 
+    <p> Distance from the Sun: 150.03 × 10⁶ KM </p> 
+    <a onclick="doScrolling(3425,15000,303.5)"> <p><i class="bx bx-chevron-down"> </i> </p> Moon </a> 
+   </div> 
+   <div class="hint-box"> 
+    <div class="hint"> 
+     <p id="moonspd"> You are currently travelling with the speed of 92256 kmph.</p> 
+    </div> 
+    <div class="hint"> 
+     <p id="moontime"> You will have to wait for 3 days if we go with the original speed. </p> 
+    </div> 
+    <div class="hint"> 
+     <p id="marsspd"> You are currently travelling with five times the speed of light! </p> 
+    </div> 
+    <div class="hint"> 
+     <p id="marstime"> You will have to sit in front of screen for 150 days if we go with original speed. </p> 
+    </div> 
+   </div> 
+   <div id="moon-cont" class="cont"> 
+    <a onclick="doScrolling(0,15000,303.5)"> Earth <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="moon" src="images/moon.jpg">  
+    <h3> Moon </h3> 
+    <p> Diameter: 3474.8 KM </p> 
+    <p> Distance from Earth: 384.4 × 10³ KM </p> 
+    <a onclick="doScrolling(3108650,37000,304)"> <p> <i class="bx bx-chevron-down"> </i> </p> Mars </a> 
+   </div> 
+   <div id="mars-cont" class="cont"> 
+    <a onclick="doScrolling(0,37000,304)"> Earth <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="mars" src="images/mars.jpg">  
+    <h3> Mars </h3> 
+    <p> Diameter: 6779 KM </p> 
+    <p> Distance from Earth: 54.6 × 10⁶ KM </p> 
+    <a href="#jupiter"> <p> <i class="bx bx-chevron-down"> </i> </p> Jupiter </a> 
+   </div> 
+   <div id="jupiter-cont" class="cont"> 
+    <a onclick="doScrolling(0,40000)"> Earth <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="jupiter" src="images/jupiter.jpg">  
+    <h3> Jupiter </h3> 
+    <p> Diameter: 139820 KM </p> 
+    <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
+    <a href="#Saturn"> <p> <i class="bx bx-chevron-down"> </i> </p> Saturn </a> 
+   </div>  
+  </section> 
+  <!--main js--> 
+  <script src="js/main.js"></script>  
+  <footer> 
+   <p class="programminghero">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p> 
+  </footer>
+ </body>
+</html>
