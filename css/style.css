@@ -74,7 +74,7 @@ text-align: center;
 #mars1, #mars2, #mars3, #mars4{
 position: absolute;
 left: -120vw;
-width: 90vw;
+max-width: 87.5vw;
 transition: 1s;
 }
 
