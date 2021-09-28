@@ -73,7 +73,7 @@ text-align: center;
 #mars1, #mars2, #mars3, #mars4{
 position: absolute;
 left: -100%;
-width: 90vw;
+width: 100vw;
 transition: 1s;
 }
 
