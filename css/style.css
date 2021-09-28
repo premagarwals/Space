@@ -63,6 +63,7 @@ font-weight: 100;
 position: fixed;
 z-index: 10;
 width: 100vw;
+padding: 0;
 top: 50%;
 transform: translateY(-50%);
 font-size: 30px;
@@ -72,9 +73,8 @@ text-align: center;
 #moon1, #moon2, 
 #mars1, #mars2, #mars3, #mars4{
 position: absolute;
-left: -100%;
-width: 100vw;
-padding: 10vw 20px;
+left: -120vw;
+width: 90vw;
 transition: 1s;
 }
 
