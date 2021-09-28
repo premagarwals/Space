@@ -13,12 +13,19 @@ z-index: -5;
 position: fixed;
 display: flex;
 min-height: 100vh;
-min-width: 100vw;
+width: 100vw;
 margin-top: 0px;
 justify-content: center;
 align-items: center;
+text-align: center;
 }
-#ufo{width: 30px;animation: move 0.1s infinite;}
+#ufo{
+width: 30px;
+opacity: 0;
+transition: 1s;
+transform: translateX(-25%);
+animation: move 0.1s infinite;
+}
 @keyframes move{
 0%{margin-left: -5px;}
 50%{margin-right: -5px;}
