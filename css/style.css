@@ -92,7 +92,10 @@ text-align: center;
 }
 
 #moon1, #moon2, 
-#mars1, #mars2, #mars3, #mars4{
+#mars1, #mars2, #mars3, #mars4,
+#jupi1, #jupi2, #jupi3, #jupi4, #jupi5, #jupi6, #jupi7,
+#satu1
+{
 position: absolute;
 left: -120vw;
 width: 90vw;
@@ -111,7 +114,19 @@ transition: 1s;
 #mars{width: 53px;}
 #mars-cont{margin-top: 3104815px;}
 
-#jupiter{width: 1097px; margin-left: 98%;}
+#jupiter{width: 1121px;}
 #jupiter-cont{margin-top: 4319495px;}
+
+#saturn{height: 945px;}
+#saturn-cont{margin-top: 100000px;}
+
+#uranus{width: 401px;}
+#uranus-cont{margin-top: 100000px;}
+
+#neptune{width: 388px;}
+#neptune-cont{margin-top: 100000px;}
+
+#pluto{width: 18.6px;}
+#pluto-cont{margin-top: 4275px;}
 
 
