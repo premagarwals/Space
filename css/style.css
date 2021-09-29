@@ -24,7 +24,6 @@ text-align: center;
 width: 30px;
 opacity: 0;
 transition: 1s;
-transform: translateX(-25%);
 animation: move 0.1s infinite;
 }
 @keyframes move{
