@@ -59,6 +59,16 @@ font-weight: 200;
 text-align: center;
 }
 
+.credit{
+    position: fixed;
+    z-index: 1000;
+    bottom: 0px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0.2;
+}
+
 /*hint section*/
 
 
