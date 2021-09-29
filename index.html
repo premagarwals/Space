@@ -23,7 +23,8 @@
    <div id="earth-cont" class="cont"> 
     <img id="earth" src="images/earth.jpg">  
     <h3> Earth </h3> 
-    <p> Diameter: 12742 KM </p> 
+    <p> Diameter: 12742 KM </p>
+    <a href="#neptune"> go </a> 
     <p> Distance from the Sun: 150.03 × 10⁶ KM </p> 
     <a href="#moon-cont" duration="20000" onclick="DisplayHint(303.5)" easing="smooth" scrollTo="moon-cont" class="scrollOnClick"> <p><i class="bx bx-chevron-down"> </i> </p> Moon </a> 
    </div> 
@@ -42,16 +43,47 @@
     <h3> Mars </h3> 
     <p> Diameter: 6779 KM </p> 
     <p> Distance from Earth: 54.6 × 10⁶ KM </p> 
-    <a href="#jupiter-cont" duration="5000" easing="smooth" scrollTo="jupiter-cont" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Jupiter </a> 
+    <a href="#jupi-name" duration="60000" onclick="DisplayHint(405)" easing="smooth" scrollTo="jupi-name" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Jupiter </a> 
    </div> 
    <div id="jupiter-cont" class="cont"> 
-    <a href="#mars-cont" duration="5000" easing="smooth" scrollTo="mars-cont" class="scrollOnClick"> Mars <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <a href="#mars-cont" duration="60000" onclick="DisplayHint(405)" easing="smooth" scrollTo="mars-cont" class="scrollOnClick"> Mars <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
     <img id="jupiter" src="images/jupiter.jpg">  
-    <h3> Jupiter </h3> 
+    <h3 id="jupi-name"> Jupiter </h3> 
     <p> Diameter: 139820 KM </p> 
     <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
-    <a href="#Saturn"> <p> <i class="bx bx-chevron-down"> </i> </p> Saturn </a> 
+    <a href="#saturn-cont" duration="5000" onclick="DisplayHint(506)" easing="smooth" scrollTo="saturn-cont" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Saturn </a> 
    </div>  
+   <div id="saturn-cont" class="cont"> 
+    <a href="#jupi-name" duration="5000" onclick="DisplayHint(506)" easing="smooth" scrollTo="jupi-name" class="scrollOnClick"> Jupiter <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="saturn" src="images/saturn.jpg">  
+    <h3 id="satu-name"> Saturn </h3> 
+    <p> Diameter: 139820 KM </p> 
+    <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
+     <a href="#uran-name" duration="5000" onclick="DisplayHint(607)" easing="smooth" scrollTo="uran-name" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Uranus </a> 
+   </div> 
+   <div id="uranus-cont" class="cont"> 
+    <a href="#satu-name" duration="5000" onclick="DisplayHint(607)" easing="smooth" scrollTo="satu-name" class="scrollOnClick"> Saturn <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="uranus" src="images/uranus.jpg">  
+    <h3 id="uran-name"> Uranus </h3> 
+    <p> Diameter: 139820 KM </p> 
+    <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
+     <a href="#nept-name" duration="5000" onclick="DisplayHint(708)" easing="smooth" scrollTo="nept-anme" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Neptune </a> 
+   </div> 
+   <div id="neptune-cont" class="cont"> 
+    <a href="#uran-name" duration="5000" onclick="DisplayHint(708)" easing="smooth" scrollTo="uran-name" class="scrollOnClick"> Uranus <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="neptune" src="images/neptune.jpg">  
+    <h3 id="nept-name"> Neptune </h3> 
+    <p> Diameter: 139820 KM </p> 
+    <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
+     <a href="#pluto-cont" duration="5000" onclick="DisplayHint(809)" easing="smooth" scrollTo="pluto-cont" class="scrollOnClick"> <p> <i class="bx bx-chevron-down"> </i> </p> Pluto </a> 
+   </div> 
+   <div id="pluto-cont" class="cont"> 
+    <a href="#nept-name" duration="5000" onclick="DisplayHint(809)" easing="smooth" scrollTo="nept-name" class="scrollOnClick"> Neptune <p> <i class="bx bx-chevron-up"> </i> </p> </a> 
+    <img id="pluto" src="images/pluto.jpg">  
+    <h3 id="plut-name"> Pluto </h3> 
+    <p> Diameter: 139820 KM </p> 
+    <p> Distance from Mars: 550.39 × 10⁶ KM </p> 
+    </div> 
   
   <div class="hint-box"> 
     <div class="hint"> 
@@ -70,7 +102,28 @@
     <p id="mars3"> Mars has gravity of 3.172 m/s². That's approximately one third of Earth's gravity. </p>
     </div>
     <div class="hint">  
-    <p id="mars4"> It's going to take you 37 seconds to get there even if you were travelling with 5 times the speed of light! </p>
+    <p id="mars4"> It's going to take you 37 seconds to get there even if you are travelling with 5 times the speed of light! </p>
+    </div>
+    <div class="hint"> 
+    <p id="jupi1"> Our current speed is near 31 times the speed of light. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi2"> Jupiter's mass is equals to 2.5 times the combined mass of all other planets in the Solar System. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi3"> Not only Saturn, but Jupiter and Uranus also have rings. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi4"> Jupiter has been visited 7 times by space crafts. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi5"> The gaseous cloud on Jupiter are only 50KM thick. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi6"> If Jupiter got any more massive, it would actually get smaller in size. </p>
+    </div>
+    <div class="hint">  
+    <p id="jupi7"> Jupiter is third brightest object in Solar System after Venus and Moon, that you have seen it and had no idea about that.  </p>
     </div>
    </div> 
   <div class="credit"><p> by Prem Agarwal. </p> </div>
